@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Test Page'),
+      home: const MyHomePage(title: 'Flutter Demo Test Page quick test'),
     );
   }
 }
@@ -64,6 +64,10 @@ class _MyHomePageState extends State<MyHomePage> {
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
+      print('Incrementing counter');
+      print(_counter);
+      // print('Incrementing counter');
+
       _counter++;
     });
   }
