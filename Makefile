@@ -1,26 +1,26 @@
 .PHONY: install
 install:
-	flutter pub get
+	cd template && flutter pub get
 
 .PHONY: test
 test:
-	flutter test
+	cd template && flutter test
 
 .PHONY: test_coverage
 test_coverage:
-	flutter test --coverage
+	cd template && flutter test --coverage
 
 .PHONY: lint
 lint:
-	flutter analyze
+	cd template && flutter analyze
 
 .PHONY: format
 format:
-	flutter format
+	cd template && flutter format
 
 .PHONY: format_check
 format_check:
-	flutter format --set-exit-if-changed .
+	cd template && flutter format --set-exit-if-changed .
 
 .PHONY: before_commit
 before_commit: test format lint
