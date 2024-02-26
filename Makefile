@@ -16,7 +16,7 @@ lint:
 
 .PHONY: format
 format:
-	cd template && dart format .
+	cd template && dart format . --set-exit-if-changed
 
 .PHONY: format_check
 format_check:
