@@ -16,7 +16,7 @@ lint:
 
 .PHONY: format
 format:
-	cd template && flutter format
+	cd template && dart format .
 
 .PHONY: format_check
 format_check:
