@@ -16,11 +16,11 @@ lint:
 
 .PHONY: format
 format:
-	cd template && dart format . --set-exit-if-changed
+	cd template && dart format .
 
 .PHONY: format_check
 format_check:
-	cd template && flutter format --set-exit-if-changed .
+	cd template && dart format . --set-exit-if-changed
 
 .PHONY: before_commit
 before_commit: test format lint
